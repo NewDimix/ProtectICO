@@ -1,0 +1,353 @@
+.social
+    text-transform uppercase
+    font-weight 700
+
+    &__blog
+        {ibm}
+        text-decoration none
+        color $white
+        font-size-f(33)
+        margin-right-f(28)
+        margin-bottom-f(20)
+
+        @media (min-width 650px)
+            margin-bottom 0
+            margin-right-f(68)
+
+        &:hover, &:focus
+            text-decoration underline
+
+        &:focus
+            outline none
+
+    &__list
+        {ibm}
+        padding-left 0
+        list-style none
+        font-size 0
+
+        li
+            {ibm}
+
+    &__item
+        {ibt}
+        background-position center
+        background-repeat no-repeat
+
+    &__faq
+        {ibm}
+        text-decoration none
+        color $white
+        font-size-f(33)
+        margin-right-f(28)
+
+        @media (min-width 650px)
+            margin-right 0
+
+        &:hover, &:focus
+            text-decoration underline
+
+        &:focus
+            outline none
+
+    &_white
+        .social
+            &__item
+                width-f(36)
+                height-f(36)
+                background-size contain
+                transition all .05s ease
+
+                &:hover
+                    box-shadow 0 0 0 5px $bay-of-many, 0 0 0 7px $white
+
+                &:focus
+                    outline none
+                    box-shadow 0 0 0 5px $bay-of-many, 0 0 0 7px $white
+
+                &_google
+                    background-image inline('google-icon-w.svg')
+
+                &_twitter
+                    background-image inline('twitter-icon-w.svg')
+
+                &_mail
+                    background-image inline('mail-icon-w.svg')
+
+                &_facebook
+                    background-image inline('facebook-icon-w.svg')
+
+                &_rss
+                    background-image inline('rss-icon-w.svg')
+
+                &_vk
+                    background-image inline('vk-icon-w.svg')
+
+                &_mailru
+                    background-image inline('mailru-icon-w.svg')
+
+                &_yandex
+                    background-image inline('yandex-icon-w.svg')
+
+                &_livejournal
+                    background-image inline('livejournal-icon-w.svg')
+
+                &_ok
+                    background-image inline('ok-icon-w.svg')
+
+        br
+            @media (min-width 650px)
+                display none
+
+    &_circle
+        .social
+            &__item
+                border-radius 50%
+                background-color $white
+                background-size 60%
+                width-f(72)
+                height-f(72)
+                transition all .15s ease
+
+                &:hover, &:focus
+                    outline none
+                    background-color $black
+
+                &_google
+                    background-image inline('google-icon-b.svg')
+
+                    &:hover, &:focus
+                        background-image inline('google-icon-w.svg')
+
+                &_twitter
+                    background-image inline('twitter-icon-b.svg')
+
+                    &:hover, &:focus
+                        background-image inline('twitter-icon-w.svg')
+
+                &_mail
+                    background-image inline('mail-icon-b.svg')
+
+                    &:hover, &:focus
+                        background-image inline('mail-icon-w.svg')
+
+                &_facebook
+                    background-image inline('facebook-icon-b.svg')
+
+                    &:hover, &:focus
+                        background-image inline('facebook-icon-w.svg')
+
+                &_rss
+                    background-image inline('rss-icon-b.svg')
+
+                    &:hover, &:focus
+                        background-image inline('rss-icon-w.svg')
+
+                &_vk
+                    background-image inline('vk-icon-b.svg')
+
+                    &:hover, &:focus
+                        background-image inline('vk-icon-w.svg')
+
+                &_mailru
+                    background-image inline('mailru-icon-b.svg')
+
+                    &:hover, &:focus
+                        background-image inline('mailru-icon-w.svg')
+
+                &_yandex
+                    background-image inline('yandex-icon-b.svg')
+
+                    &:hover, &:focus
+                        background-image inline('yandex-icon-w.svg')
+
+                &_livejournal
+                    background-image inline('livejournal-icon-b.svg')
+
+                    &:hover, &:focus
+                        background-image inline('livejournal-icon-w.svg')
+
+                &_ok
+                    background-image inline('ok-icon-b.svg')
+
+                    &:hover, &:focus
+                        background-image inline('ok-icon-w.svg')
+
+        br
+            display block
+
+            @media (min-width 550px)
+                display none
+
+            @media (min-width 1170px)
+                display block
+
+    &_colored
+        .social
+            &__list
+                li
+                    margin-right-f(7)
+
+                    &:last-child
+                        margin-right 0
+
+            &__item
+                border-radius 5px
+                background-size 60%
+                width-f(72)
+                height-f(72)
+                transition all .15s ease
+
+                &:focus
+                    outline none
+
+                &_google
+                    background-image inline('google-icon-w.svg')
+                    background-color #e23e2b
+
+                    &:hover, &:focus
+                        background-color darken(#e23e2b, 15%)
+
+                &_twitter
+                    background-image inline('twitter-icon-w.svg')
+                    background-color #00b2f0
+
+                    &:hover, &:focus
+                        background-color darken(#00b2f0, 15%)
+
+                &_mail
+                    background-image inline('mail-icon-w.svg')
+                    background-color #3c7cea
+
+                    &:hover, &:focus
+                        background-color darken(#3c7cea, 15%)
+
+                &_facebook
+                    background-image inline('facebook-icon-w.svg')
+                    background-color #33539d
+
+                    &:hover, &:focus
+                        background-color darken(#33539d, 15%)
+
+                &_rss
+                    background-image inline('rss-icon-w.svg')
+                    background-color #f69721
+
+                    &:hover, &:focus
+                        background-color darken(#f69721, 15%)
+
+                &_vk
+                    background-image inline('vk-icon-w.svg')
+                    background-color #3d6ea3
+
+                    &:hover, &:focus
+                        background-color darken(#3d6ea3, 15%)
+
+                &_mailru
+                    background-image inline('mailru-icon-w.svg')
+                    background-color #0a8be4
+
+                    &:hover, &:focus
+                        background-color darken(#0a8be4, 15%)
+
+                &_yandex
+                    background-image inline('yandex-icon-w.svg')
+                    background-color #fe0301
+
+                    &:hover, &:focus
+                        background-color darken(#fe0301, 15%)
+
+                &_livejournal
+                    background-image inline('livejournal-icon-w.svg')
+                    background-color #16a0d9
+
+                    &:hover, &:focus
+                        background-color darken(#16a0d9, 15%)
+
+                &_ok
+                    background-image inline('ok-icon-w.svg')
+                    background-color #f47025
+
+                    &:hover, &:focus
+                        background-color darken(#f47025, 15%)
+
+    &_transparent
+        .social
+            &__list
+                li
+                    margin-right-f(50)
+
+                    &:last-child
+                        margin-right 0
+
+            &__item
+                border-radius 50%
+                background-size 60%
+                width-f(100)
+                height-f(100)
+                transition all .15s ease
+                border 3px solid $white
+                background-color transparent
+
+                &:focus
+                    outline none
+
+                &_google
+                    background-image inline('google-icon-w.svg')
+
+                    &:hover, &:focus
+                        background-color darken(#e23e2b, 15%)
+
+                &_twitter
+                    background-image inline('twitter-icon-w.svg')
+
+                    &:hover, &:focus
+                        background-color darken(#00b2f0, 15%)
+
+                &_mail
+                    background-image inline('mail-icon-w.svg')
+
+                    &:hover, &:focus
+                        background-color darken(#3c7cea, 15%)
+
+                &_facebook
+                    background-image inline('facebook-icon-w.svg')
+
+                    &:hover, &:focus
+                        background-color darken(#33539d, 15%)
+
+                &_rss
+                    background-image inline('rss-icon-w.svg')
+
+                    &:hover, &:focus
+                        background-color darken(#f69721, 15%)
+
+                &_vk
+                    background-image inline('vk-icon-w.svg')
+
+                    &:hover, &:focus
+                        background-color darken(#3d6ea3, 15%)
+
+                &_mailru
+                    background-image inline('mailru-icon-w.svg')
+
+                    &:hover, &:focus
+                        background-color darken(#0a8be4, 15%)
+
+                &_yandex
+                    background-image inline('yandex-icon-w.svg')
+
+                    &:hover, &:focus
+                        background-color darken(#fe0301, 15%)
+
+                &_livejournal
+                    background-image inline('livejournal-icon-w.svg')
+
+                    &:hover, &:focus
+                        background-color darken(#16a0d9, 15%)
+
+                &_ok
+                    background-image inline('ok-icon-w.svg')
+
+                    &:hover, &:focus
+                        background-color darken(#f47025, 15%)

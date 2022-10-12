@@ -1,0 +1,133 @@
+.full-news
+    color black
+
+    &__title
+        padding-top-f(30)
+        margin-bottom-f(50)
+        text-align center
+
+        @media (min-width 992px)
+            margin-bottom-f(80)
+
+        @media (min-width 1260px)
+            margin-bottom-f(100)
+
+        h1
+            font-weight 400
+            font-size-f(45)
+            text-transform uppercase
+            margin-top 0
+            margin-bottom 0
+
+    &__row
+        margin-bottom-f(67)
+        text-align right
+
+        @media (min-width 480px)
+            text-align left
+
+    &__date
+        {ibt}
+        color white
+        font-size 0
+        background-color $alizarin-crimson
+        padding-top-f(23)
+        padding-bottom-f(23)
+        padding-left-f(22)
+        padding-right-f(22)
+
+        span
+            font-size-f(35)
+
+            &:not(:last-child)
+                &:after
+                    content '/'
+
+    &__author
+        position relative
+        {ibm}
+        color $gray
+        padding-top-f(28)
+        padding-bottom-f(28)
+        font-size-f(28)
+        padding-left-f(40)
+
+        &:before
+            content ''
+            position absolute
+            top 54%
+            left-f(8)
+            transform translateY(-50%)
+            background inline('user-icon.svg')
+            background-position center
+            background-size contain
+            background-repeat no-repeat
+            width-f(23)
+            height-f(23)
+
+        &:after
+            content '|'
+            color $tundora
+
+    &__comments
+        position relative
+        {ibm}
+        color $gray
+        padding-top-f(28)
+        padding-bottom-f(28)
+        font-size-f(28)
+        padding-left-f(40)
+
+        &:before
+            content ''
+            position absolute
+            top 54%
+            left-f(8)
+            transform translateY(-50%)
+            background inline('message-icon.svg')
+            background-position center
+            background-size contain
+            background-repeat no-repeat
+            width-f(23)
+            height-f(23)
+
+        &:after
+            content '|'
+            color $tundora
+
+    &__text
+        font-size-f(35)
+        text-align justify
+        font-family HeliosCond
+        margin-bottom-f(77)
+
+        p
+            text-indent-f(57)
+            margin-top 0
+            margin-bottom 0
+
+            &:last-child
+                margin-bottom 0
+
+        img
+            margin-top-f(83)
+            margin-bottom-f(83)
+            width 100%
+
+    &__hr
+        margin-top 0
+        margin-bottom-f(53)
+
+    &__share
+        font-size-f(35)
+        font-family HeliosCond
+
+        span
+            margin-right-f(40)
+
+    &__social
+        {ibm}
+
+    br
+        @media (min-width 480px)
+            display none

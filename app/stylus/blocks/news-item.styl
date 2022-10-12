@@ -1,0 +1,146 @@
+.news-item
+    color $black
+
+    &__left-block
+        margin-bottom-f(25)
+
+        @media (min-width 992px)
+            width 48%
+            float left
+            margin-right 4%
+
+    &__header
+        text-align right
+        font-size 0
+
+        @media (min-width 480px)
+            margin-bottom-f(25)
+
+        @media (min-width 992px)
+            margin-bottom 0
+
+        @media (min-width 1260px)
+            margin-bottom-f(25)
+
+    &__date
+        {ibt}
+        color white
+        font-size 0
+        background-color $alizarin-crimson
+        padding-top-f(23)
+        padding-bottom-f(23)
+        padding-left-f(22)
+        padding-right-f(22)
+
+        @media (min-width 480px)
+            float left
+
+        @media (min-width 992px)
+            float none
+
+        @media (min-width 1260px)
+            float left
+
+        span
+            font-size-f(35)
+
+            &:not(:last-child)
+                &:after
+                    content '/'
+
+    &__author
+        position relative
+        {ibm}
+        color $gray
+        padding-top-f(28)
+        padding-bottom-f(28)
+        font-size-f(28)
+        padding-left-f(40)
+
+        &:before
+            content ''
+            position absolute
+            top 54%
+            left-f(8)
+            transform translateY(-50%)
+            background inline('user-icon.svg')
+            background-position center
+            background-size contain
+            background-repeat no-repeat
+            width-f(23)
+            height-f(23)
+
+        &:after
+            content '|'
+            color $tundora
+
+    &__comments
+        position relative
+        {ibm}
+        color $gray
+        padding-top-f(28)
+        padding-bottom-f(28)
+        font-size-f(28)
+        padding-left-f(40)
+
+        &:before
+            content ''
+            position absolute
+            top 54%
+            left-f(8)
+            transform translateY(-50%)
+            background inline('message-icon.svg')
+            background-position center
+            background-size contain
+            background-repeat no-repeat
+            width-f(23)
+            height-f(23)
+
+        &:after
+            content '|'
+            color $tundora
+
+    &__img
+        overflow hidden
+
+        img
+            {ibt}
+            width 100%
+            height-f(492)
+            object-fit cover
+
+    &__content
+        @media (min-width 992px)
+            min-height-f(675)
+
+        @media (min-width 1260px)
+            min-height-f(608)
+
+    &__title
+        padding-top-f(30)
+        margin-bottom-f(50)
+        text-align center
+
+        @media (min-width 992px)
+            text-align right
+            margin-bottom-f(80)
+
+        @media (min-width 1260px)
+            margin-bottom-f(100)
+
+        h2
+            font-weight 400
+            font-size-f(45)
+            text-transform uppercase
+            margin-top 0
+            margin-bottom 0
+
+    &__text
+        font-size-f(35)
+        text-align justify
+        text-indent-f(58)
+        margin-bottom-f(75)
+        font-family HeliosCond
+
+    &__btn
+        text-align right

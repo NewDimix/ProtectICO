@@ -1,0 +1,81 @@
+.aside
+    width 100%
+
+    @media (min-width 870px)
+        position absolute
+        right 10px
+        top-f(77)
+        width-f(540)
+
+    &__title
+        background-color $bahama-blue
+        padding-left-f(22)
+        padding-right-f(22)
+        padding-top-f(33)
+        padding-bottom-f(33)
+        font-size-f(18)
+
+        h2
+            font-weight 600
+            margin-top 0
+            margin-bottom 0
+
+    &__item
+        border 3px solid #ececec
+        margin-bottom-f(33)
+
+        &:after
+            content ""
+            display table
+            clear both
+
+    &__content
+        padding-top-f(33)
+        padding-bottom-f(33)
+        padding-left-f(33)
+        padding-right-f(33)
+
+        &:after
+            content ""
+            display table
+            clear both
+
+    &__list
+        font-size-f(25)
+        padding-left 0
+        list-style none
+
+        li
+            position relative
+            padding-left-f(50)
+
+            &:not(:last-child)
+                margin-bottom-f(25)
+
+            &:after
+                content ''
+                background inline('check-icon.svg') no-repeat
+                background-position center
+                background-size contain
+                width-f(40)
+                height-f(40)
+                position absolute
+                left 0
+                top 50%
+                transform translateY(-50%)
+
+            a
+                color $black
+
+    .gcw_mainFtjxo4lRq
+        max-width none !important
+        width 100% !important
+        font-size 25px !important
+        font-size (25/16)rem !important
+
+    #gcw_siteFtjxo4lRq
+        display none
+
+    #vk_widget, #vk_groups
+        width 100% !important
+

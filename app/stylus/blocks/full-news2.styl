@@ -1,0 +1,92 @@
+.full-news2
+    color $black
+
+    &__left-block
+        margin-bottom-f(15)
+
+        @media (min-width 768px)
+            min-width-f(600)
+            width 38%
+            float left
+            margin-right 2%
+
+    &__header
+        font-size 0
+        margin-bottom-f(25)
+
+    &__date
+        {ibt}
+        color white
+        font-size 0
+        background-color $alizarin-crimson
+        padding-top-f(23)
+        padding-bottom-f(23)
+        padding-left-f(22)
+        padding-right-f(22)
+
+        span
+            font-size-f(35)
+
+            &:not(:last-child)
+                &:after
+                    content '/'
+
+    &__img
+        overflow hidden
+        margin-bottom-f(47)
+
+        img
+            {ibt}
+            width 100%
+            height-f(492)
+            object-fit cover
+
+    &__quote
+        font-size-f(35)
+        font-family HeliosCond
+        padding-left-f(100)
+        padding-right-f(70)
+
+        p
+            position relative
+
+            &:after
+                content ''
+                position absolute
+                left-f(-70)
+                top 0
+                width-f(50)
+                height-f(50)
+                background inline('double-arrows-icon-r.svg')
+                background-size 100%
+                background-repeat no-repeat
+                transform rotate(180deg)
+
+    &__content
+        @media (min-width 768px)
+            min-height-f(950)
+
+    &__title
+        margin-bottom-f(50)
+
+        @media (min-width 768px)
+            margin-bottom-f(80)
+
+        @media (min-width 1260px)
+            margin-bottom-f(100)
+
+        h1
+            font-weight 400
+            font-size-f(45)
+            text-transform uppercase
+            margin-top 0
+            margin-bottom 0
+
+    &__text
+        font-size-f(35)
+        text-align justify
+        text-indent-f(58)
+        font-family Futuris
+
+        p
+            margin-bottom 0

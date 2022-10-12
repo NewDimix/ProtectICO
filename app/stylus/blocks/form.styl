@@ -1,0 +1,103 @@
+.form
+    text-align center
+
+    &__text
+        position relative
+        display block
+        font-size-f(45)
+        font-weight 300
+        text-transform uppercase
+        text-align center
+        margin-bottom-f(10)
+        margin-top-f(50)
+        padding-top-f(28)
+        padding-bottom-f(28)
+        padding-left-f(20)
+        padding-right-f(20)
+        max-width-f(633)
+        width 100%
+        border 3px solid rgba(255, 255, 255, 0.6)
+        background-color transparent
+        color $white
+        margin-left auto
+        margin-right auto
+        transition all .3s ease
+
+        @media (min-width 768px)
+            font-size-f(53)
+
+        &:hover
+            border-color $white
+
+        &:focus
+            outline none
+            border-color $white
+
+            &::-webkit-input-placeholder
+                color transparent
+
+            &::-moz-placeholder
+                color transparent
+
+            &:-moz-placeholder
+                color transparent
+
+            &:-ms-input-placeholder
+                color transparent
+
+        &::-webkit-input-placeholder
+            color $white
+
+        &::-moz-placeholder
+            color $white
+
+        &:-moz-placeholder
+            color $white
+
+        &:-ms-input-placeholder
+            color $white
+
+        &.error
+            border-color rgba(255, 0, 0, .6)
+
+            &:hover, &:focus
+                border-color rgba(255, 0, 0, 1)
+
+        &.valid
+            border-color rgba(0, 173, 16, 0.6)
+
+            &:hover, &:focus
+                border-color rgba(0, 173, 16, 1)
+
+    &__submit
+        background-color rgba(255, 0, 0, .6)
+        border none
+        color $white
+        font-weight 300
+        font-size-f(48)
+        padding-top-f(15)
+        padding-bottom-f(15)
+        padding-left-f(40)
+        padding-right-f(40)
+        transition all .3s ease
+        margin-bottom-f(83)
+        margin-top-f(50)
+
+        &:hover
+            cursor pointer
+            background-color rgba(255, 0, 0, .7)
+
+    &__social
+        span
+            {ibt}
+            font-size-f(48)
+            margin-bottom-f(47)
+
+    label.error
+        display block
+        color $white
+        font-size-f(35)
+        max-width-f(1000)
+        margin-left auto
+        margin-right auto
+        transition all 1s ease

@@ -1,0 +1,42 @@
+@@include('elements/area-page/page-start.html')
+@@include('elements/loader.html')
+<header class="header">
+    <div class="container">
+        <div class="header__logo">
+@@include('elements/logo.html')
+        </div>
+
+        <div class="header__panel">
+@@include('elements/panel.html')
+        </div>
+
+        <div class="header__social">
+@@include('elements/social.html')
+        </div>
+    </div>
+</header>
+
+<main class="main" data-parallax="scroll" data-position="center" data-natural-width="2334" data-natural-height="1532" data-bleed="20" data-image-src="img/area-bg.jpg">
+    <div class="main__bg-dark"></div>
+
+    <div class="container">
+@@include('elements/area-page/area-section-page.html')
+    </div>
+</main>
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer__menu">
+@@include('elements/menu.html')
+        </div>
+
+        <div class="footer__text-block">
+@@include('elements/text-block.html')
+        </div>
+
+        <div class="footer__social">
+@@include('elements/social-footer.html')
+        </div>
+    </div>
+</footer>
+@@include('elements/page-end.html')

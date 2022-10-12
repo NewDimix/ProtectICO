@@ -1,0 +1,47 @@
+.news-slider
+    padding-left-f(40)
+    padding-right-f(40)
+    position relative
+
+    &__arrows
+        position absolute
+        font-size 0
+        border-radius 50%
+        border 2px solid $white
+        width-f(48)
+        height-f(48)
+        background-color transparent
+        top 50%
+        transform translateY(-50%)
+        background inline('double-arrows-icon-g.svg')
+        background-position center
+        background-size 60%
+        background-repeat no-repeat
+        outline none !important
+
+        @media (min-width 1270px)
+            border-width 3px
+
+        &:hover
+            cursor pointer
+
+        &:focus
+            outline none
+
+        &_prev
+            left -5px
+            transform rotate(180deg) translateY(50%)
+
+        &_next
+            right -5px
+
+    &_white-bg
+        .news-slider
+            &__arrows
+                border-color #9e9e9e
+
+                &:hover
+                    cursor pointer
+
+                &:focus
+                    outline none

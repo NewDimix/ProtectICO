@@ -1,0 +1,46 @@
+.place
+    position relative
+    display block
+    background-color $alizarin-crimson
+    padding-top-f(48)
+    padding-bottom-f(48)
+    padding-left-f(70)
+    padding-right-f(70)
+    text-decoration none
+    transition all .2s ease
+    height-f(460)
+    z-index 2
+
+    &:hover
+        background-color #c6171d
+
+    &:focus
+        box-shadow 0 0 0px 2px $white, 0 0 0px 4px $alizarin-crimson
+
+    &__arrow
+        width-f(209)
+        height-f(209)
+        border 10px solid $white
+        border-radius 50%
+        margin-left auto
+        margin-right auto
+        background inline('arrow-right-icon.svg')
+        background-position center
+        background-size 80%
+        background-repeat no-repeat
+        margin-bottom-f(40)
+
+        @media (min-width 1830px)
+            border-width 16px
+
+    &__text
+        font-size-f(37)
+        color $white
+        text-transform uppercase
+        font-weight 700
+
+    &_transparent
+        background-color rgba(157, 6, 10, .8)
+
+        &:hover
+            background-color rgba(139, 6, 10, 0.8)

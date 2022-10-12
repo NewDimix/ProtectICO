@@ -1,0 +1,39 @@
+@@include('elements/detail-news-page/page-start.html')
+@@include('elements/loader.html')
+<header class="header">
+    <div class="container">
+        <div class="header__logo">
+@@include('elements/logo.html')
+        </div>
+
+        <div class="header__panel">
+@@include('elements/panel.html')
+        </div>
+
+        <div class="header__social">
+@@include('elements/social.html')
+        </div>
+    </div>
+</header>
+
+<main class="main">
+    <div class="container">
+        <div class="news-list">
+@@include('elements/detail-news-page/full-news.html')
+        </div>
+@@include('elements/news-page/aside.html')
+    </div>
+</main>
+
+<footer class="footer footer_not-text-block">
+    <div class="container">
+        <div class="footer__menu">
+@@include('elements/menu.html')
+        </div>
+
+        <div class="footer__social">
+@@include('elements/social-footer.html')
+        </div>
+    </div>
+</footer>
+@@include('elements/page-end.html')

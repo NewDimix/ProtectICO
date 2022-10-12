@@ -1,0 +1,32 @@
+.section
+    position relative
+
+    &__title
+        font-size-f(45)
+        font-weight 300
+        text-transform uppercase
+        text-align center
+        margin-top 0
+        margin-bottom-f(40)
+
+        @media (min-width 768px)
+            font-size-f(53)
+            margin-bottom-f(60)
+
+        &_blue
+            color $bay-of-many
+
+        &_white
+            color $white
+            text-shadow 0 0 8px $bay-of-many
+
+    &__text
+        font-size-f(33)
+        text-align justify
+        max-width-f(1545)
+        margin-left auto
+        margin-right auto
+
+    &__btn
+        text-align center
+        margin-top-f(45)

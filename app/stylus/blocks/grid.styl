@@ -1,0 +1,46 @@
+.grid
+    font-size 0
+    text-align center
+
+    &__item
+        max-width-f(650)
+        margin-left auto
+        margin-right auto
+        margin-bottom-f(50)
+
+        @media (min-width 768px)
+            {ibt}
+            width 45%
+            max-width none
+            margin-right 4%
+
+        @media (min-width 992px)
+            width 31.5%
+            margin-right 2.75%
+
+        &:nth-child(2n)
+            @media (min-width 768px)
+                margin-right 0
+
+            @media (min-width 992px)
+                margin-right 2.75%
+
+        &:nth-child(3n)
+            @media (min-width 992px)
+                margin-right 0
+
+        &:nth-last-child(2)
+            margin-bottom-f(40)
+
+            @media (min-width 768px)
+                margin-bottom 0
+
+        &:nth-last-child(3)
+            @media (min-width 992px)
+                margin-bottom 0
+
+        &:last-child
+            margin-bottom 0
+
+            @media (min-width 768px)
+                margin-right 0 !important

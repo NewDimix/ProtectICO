@@ -1,0 +1,79 @@
+.news-item-sl
+    padding-left-f(20)
+    padding-right-f(20)
+    padding-bottom-f(5)
+
+    &__title
+        margin-bottom-f(20)
+
+        h2
+            font-size-f(28)
+            font-weight 300
+            text-transform uppercase
+            margin-top 0
+            margin-bottom 0
+
+    &__img
+        overflow hidden
+        margin-bottom-f(27)
+        position relative
+
+        img
+            {ibt}
+            width 100%
+            height-f(250)
+            object-fit cover
+
+    &__date
+        color $white
+        position absolute
+        top-f(8)
+        left-f(12)
+        font-size-f(27)
+        font-family calibri
+        text-shadow 0 0 4px rgba(0, 0, 0, 0.6)
+
+    &__text
+        font-size-f(27)
+        font-family HeliosCond
+        font-weight 300
+        margin-bottom-f(30)
+
+    &__btn
+        a
+            background-color rgba(255, 0, 0, .6)
+            font-family HeliosCond
+            font-size-f(30)
+
+            &:hover
+                background-color rgba(255, 0, 0, .7)
+
+    &_white-bg
+        color $black
+
+        .news-item-sl
+            &__title
+                margin-bottom 0
+
+            &__date
+                {ibt}
+                background-color $alizarin-crimson
+                color $white
+                position relative
+                top-f(35)
+                left-f(-12)
+                font-size-f(28)
+                padding-top-f(17)
+                padding-bottom-f(17)
+                padding-left-f(30)
+                padding-right-f(30)
+                z-index 1
+
+            &__btn
+                text-align right
+
+                a
+                    background-color $alizarin-crimson
+
+                    &:hover
+                        background-color lighten($alizarin-crimson, 10%)

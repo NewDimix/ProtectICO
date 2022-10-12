@@ -1,0 +1,146 @@
+.footer
+    position relative
+    margin-top auto
+    z-index 9
+    background-color $bay-of-many
+    font-size 0
+    padding-top-f(50)
+    padding-bottom-f(50)
+
+    &:after
+        content ""
+        background-image url(../img/footer-bg.png)
+        background-position center
+        background-size cover
+        opacity .4
+        top 0
+        left 0
+        bottom 0
+        right 0
+        position absolute
+        z-index -1
+
+    &__menu
+        margin-bottom-f(50)
+
+        @media(min-width 992px)
+            {ibm}
+            width 50%
+            margin-bottom 0
+
+        @media(min-width 1170px)
+            width 45%
+            margin-right 0
+
+        ul
+            column-count 2
+
+            @media(min-width 480px)
+                column-count 3
+
+            @media(min-width 768px)
+                column-count 4
+
+            @media(min-width 992px)
+                column-count 2
+
+        a
+            position relative
+
+            &:hover, &:focus
+                outline none
+
+                &:before
+                    content ''
+                    position absolute
+                    left -7px
+                    top 50%
+                    transform translateY(-50%)
+                    width 2px
+                    height 15px
+                    background-color rgba(255, 255, 255, 0.7)
+
+    &__social
+        {ibm}
+        width 100%
+        text-align center
+        margin-top-f(50)
+
+        @media(min-width 1170px)
+            width 25%
+            margin-right 5%
+            margin-top 0
+
+        .social
+            &__list
+                li
+                    margin-right-f(7)
+                    margin-bottom-f(7)
+
+                    @media(min-width 550px)
+                        margin-bottom 0
+
+                    @media(min-width 1170px)
+                        margin-bottom-f(7)
+
+                    &:nth-child(6), &:nth-child(7), &:nth-child(8), &:nth-child(9), &:nth-child(10)
+                        margin-bottom 0
+
+                    &:nth-child(5)
+                        margin-right 0
+
+                        @media(min-width 550px)
+                            margin-right-f(7)
+
+                        @media(min-width 1170px)
+                            margin-right 0
+
+                    &:last-child
+                        margin-right 0
+                        margin-bottom 0
+
+    &__text-block
+        @media(min-width 992px)
+            {ibm}
+            width 40%
+            float right
+
+        @media(min-width 1170px)
+            width 25%
+
+    &_not-text-block
+        .footer
+            &__social
+                @media(min-width 992px)
+                    text-align right
+                    margin-right 0
+                    margin-top 0
+                    width 50%
+
+                @media(min-width 1170px)
+                    text-align right
+                    margin-right 0
+                    width 55%
+
+                br
+                    display block
+
+                    @media (min-width 550px)
+                        display none
+
+                    @media (min-width 992px)
+                        display block
+
+        .social
+            &__list
+                li
+                    @media(min-width 992px)
+                        margin-bottom-f(7)
+
+                    &:nth-child(6), &:nth-child(7), &:nth-child(8), &:nth-child(9), &:nth-child(10)
+                        margin-bottom 0
+
+                    &:nth-child(5)
+                        @media(min-width 992px)
+                            margin-right 0
+

@@ -1,0 +1,87 @@
+.header
+    font-size 0
+    background-color $bay-of-many
+    padding-top-f(52)
+    padding-bottom-f(15)
+    text-align right
+
+    @media (min-width 900px)
+        padding-bottom-f(52)
+
+    &__logo
+        float left
+
+        @media (min-width 2170px)
+            margin-left-f(-56)
+
+    &__social
+        display block
+        width 100%
+        padding-top 0
+        padding-bottom 0
+        margin-right 0
+        text-align center
+        text-align right
+
+        @media (min-width 650px)
+            text-align center
+
+        @media (min-width 900px)
+            text-align right
+
+        @media (min-width 1170px)
+            {ibm}
+            width auto
+            margin-right-f(173)
+            padding-top-f(55)
+            padding-bottom-f(55)
+            text-align center
+
+        .social
+            &__list
+                float right
+
+                @media (min-width 650px)
+                    float none
+                    margin-right-f(68)
+
+                li
+                    margin-right-f(28)
+                    margin-bottom-f(20)
+
+                    @media (min-width 650px)
+                        margin-bottom 0
+
+                    &:nth-child(5)
+                        @media (min-width 650px)
+                            margin-right-f(28)
+
+                    &:nth-child(6), &:nth-child(7), &:nth-child(8), &:nth-child(9), &:nth-child(10)
+                        margin-bottom 0
+
+                    &:nth-child(5)
+                        margin-right 0
+
+                    &:last-child
+                        margin-right 0
+                        margin-bottom 0
+
+    &__panel
+        float none
+        {ibm}
+        padding-top-f(61)
+        padding-bottom-f(61)
+        margin-bottom-f(20)
+
+        @media (min-width 900px)
+            margin-top-f(-20)
+            margin-bottom-f(50)
+            padding-top 0
+            padding-bottom 0
+
+        @media (min-width 1170px)
+            float right
+            padding-top-f(61)
+            padding-bottom-f(61)
+            margin-bottom 0
+            margin-top 0

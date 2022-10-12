@@ -1,0 +1,86 @@
+.btn
+    {ibt}
+    width auto
+    position relative
+    border none
+    text-decoration none
+    text-align center
+    transition all .1s ease
+    min-width-f(182)
+    ellipsis()
+
+    &:hover
+        cursor pointer
+
+    &:focus
+        outline none
+
+    &:active
+        transform scale(.95)
+
+    &_small
+        font-size-f(25)
+        padding-top-f(12)
+        padding-bottom-f(12)
+        padding-left-f(16)
+        padding-right-f(16)
+
+    &_medium
+        font-size-f(27/1.2)
+        padding-top-f(40/1.2)
+        padding-bottom-f(40/1.2)
+        font-weight 700
+        text-transform uppercase
+
+        @media (min-width 768px)
+            font-size-f(27)
+            padding-top-f(40)
+            padding-bottom-f(40)
+
+    &_big
+        font-size-f(32)
+        padding-top-f(30)
+        padding-bottom-f(30)
+        padding-left-f(40)
+        padding-right-f(40)
+        font-weight 700
+        text-transform uppercase
+
+        @media (min-width 992px)
+            font-size-f(42)
+            padding-top-f(40)
+            padding-bottom-f(40)
+            padding-left-f(55)
+            padding-right-f(55)
+
+    &_white
+        background-color $white
+        color $bay-of-many
+
+        &:hover
+            background-color $steel-blue
+            color $white
+
+        &:focus
+            box-shadow 0 0 0px 2px $steel-blue, 0 0 0px 3px $white
+
+    &_blue
+        background-color $steel-blue
+        color $white
+
+        &:hover
+            background-color $white
+            color $steel-blue
+
+        &:focus
+            box-shadow 0 0 0px 1px $white, 0 0 0px 3px $steel-blue
+
+    &_red
+        background-color $alizarin-crimson
+        color $white
+
+        &:hover
+            background-color $alizarin-crimson
+
+        &:focus
+            box-shadow 0 0 0px 1px $white, 0 0 0px 3px $alizarin-crimson
